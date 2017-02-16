@@ -9,7 +9,7 @@ import itertools
 
 def best_hand(hand):
     "From a 7-card hand, return the best 5 card hand."
-    return max(itertools.combinations(hand, 5), key=hand_rank)
+    return max(itertools.combinations(hand, 5), key=hand_rank) # returns max of hand rankings using hand_rank key
     
     
 # ------------------
