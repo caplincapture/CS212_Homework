@@ -1,4 +1,4 @@
-def longest_subpalindrome_slice2(text):
+def longest_subpalindrome_slice(text):
 
     if text == '': return (0,0)
     def length(slice): a,b = slice; return b-a
@@ -11,7 +11,7 @@ def grow(text, start, end):
     
     while (start > 0 and end < len(text)
            and text[start-1].upper() == text[end].upper()):
-        start -= 1; end += 1
+        start -= 1; end += 1 # indexing growing middle out
     return (start, end)
 
 
